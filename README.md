@@ -1,4 +1,4 @@
-bsmfg
-=====
+sassintro-setup
+===============
 
-One page brochure site template
+uxe-b12 sass intro material

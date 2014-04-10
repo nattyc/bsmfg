@@ -1,0 +1,234 @@
+$large-screen: new-breakpoint(min-width 900px 12);
+$medium-screen: new-breakpoint(min-width 700px 8);
+$mobile: new-breakpoint(max-width 480px 4);
+$columns: 12;
+$grid-items-background: #BBB;
+
+
+//Positioning Mixins
+
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@mixin center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+//Global layout styles
+body{
+  width: 100%;
+}
+
+//Navigation layout
+header{
+  background-color: $primary-grey;
+  width: 100%;
+  height: 12em;
+  a{
+    margin: 1.5em 1.5em;
+    padding-top: 1em;
+  }
+  nav{
+    @include vertical-align;
+    text-align: center;
+  }
+  .header-logo{
+    margin: 0 auto 1em;
+    display: block;
+  }
+}
+
+//Deals with positioning on top intro image
+
+.content-block-center{
+  @include outer-container;
+}
+
+.page-head{
+
+  @include background-image(url("http://placehold.it/1200x1000"));
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  padding: 12em 0 12em 0;
+  position: relative;
+  width: 100%;
+  display: table;
+  height: 30em;
+  img{
+    width: 100%;
+  }
+  h1{
+    @include span-columns(12);
+    @include media($mobile) {
+      @include type(2);
+      }
+    @include vertical-align;
+    text-align: center;
+    color: #FFF;
+    z-index: 999;
+  }
+  p{
+    @include span-columns(8);
+    @include shift(2);
+    @include media($mobile) {
+      @include span-columns(4);
+      @include shift(0);
+    }
+    padding: 1em 2em;
+    position: relative;
+    color: white;
+    font-weight: 800;
+    background-color: transparentize(black, .8);
+    z-index: 999;
+    }
+
+  //color overlay shiz
+  $image-gradient-color-top: teal;
+  $transparency-top: .6;
+  $image-gradient-color-bottom: yellow;
+  $transparency-bottom: .6;
+  $vertical-angle: 180deg;
+
+  $image-gradient-color-left: teal;
+  $transparency-left: .9;
+  $image-gradient-color-right: yellow;
+  $transparency-right: .8;
+  $horizontal-angle: 90deg;
+    .overlay {
+      @include linear-gradient($vertical-angle, transparentize($image-gradient-color-top, $transparency-top),
+      transparentize($image-gradient-color-bottom, $transparency-bottom));
+      display: block;
+      @include position(absolute, 0px 0px 0px 0px);
+
+      &:after {
+        content: '';
+        @include linear-gradient($horizontal-angle, transparentize($image-gradient-color-left, $transparency-left),
+          transparentize($image-gradient-color-right, $transparency-right));
+        display: block;
+        @include position(absolute, 0px 0px 0px 0px);
+      }
+  }
+}
+
+.clients{
+  @include outer-container;
+    @mixin grid-item-columns($columns) {
+      width: (100% / 12) * $columns;
+    }
+
+.section-title{
+  margin-top: 1rem;
+}
+
+.grid-items-lines {
+  margin-top: 2em;
+  $grid-items-background: $base-body-color;
+  $grid-item-background: $base-body-color;
+  $grid-item-border: 1px solid transparentize($base-font-color, .8);
+  $grid-item-columns: 4;
+  $grid-item-big-columns: 8;
+  $grid-item-color: $base-font-color;
+  $grid-item-height: 13em;
+
+  @include clearfix;
+  position: relative;
+
+  .grid-item {
+    @include transition (all 0.2s ease-in-out);
+    height: $grid-item-height;
+    background: $grid-item-background;
+    width: 100%;
+    overflow: hidden;
+    float: left;
+    padding: 2em;
+    border-right: $grid-item-border;
+    border-bottom: $grid-item-border;
+    cursor: pointer;
+
+    @include media($medium-screen) {
+      @include grid-item-columns($grid-item-columns);
+    }
+
+    &:hover {
+      background: transparentize($grid-item-color, .95);
+    }
+  }
+
+  .grid-item img {
+      display: block;
+      height: 5em;
+      margin: 1em auto 1.2em;
+      opacity: .2;
+    }
+
+  .grid-item h1 {
+      color: $grid-item-color;
+      font-size: 1.3em;
+      margin-bottom: .4em;
+    }
+
+  .grid-item p {
+      color: transparentize($grid-item-color, .4);
+      @include media($medium-screen) {
+        max-width: 70%;
+      }
+    }
+  }
+// this, below, might not be the most beautiful solution but it removes the outer borders by using the background color.
+  .bottom-cover {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 3px;
+    background: $grid-items-background;
+  }
+
+  .right-cover {
+    position: absolute;
+    right: 0px;
+    height: 100%;
+    width: 4px;
+    background: $grid-items-background;
+  }
+}
+
+
+
+
+
+// $clients: billabong, stance, rvca, electric;
+
+// .client-box {
+//    // client div properties
+//    background-size: 100%;
+//    margin-top: 1em;
+
+//    // client setup
+//    @each $client in $clients {
+//         &.#{$client} {
+//              background-image:url("../img/clients/#{$client}.jpg");
+//              background-size: 100%;
+//              @include span-columns(3);
+//              @include media($mobile) {
+//               @include span-columns(2);
+//               }
+//              height: 15em;
+//              background-position: cover;
+//              background-repeat: no-repeat;
+//              content: "";
+//              &:hover{
+//               background-color: darken($muted-yellow, 10);
+//              }
+//         }
+//    }
+//  }
+
