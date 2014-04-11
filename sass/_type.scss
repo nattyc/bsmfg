@@ -1,6 +1,9 @@
+@include font-face(ProximaNovaRg, '../fonts/ProximaNova-Reg', normal);
+@include font-face(ProximaNovaRg, '../fonts/ProximaNova-Bold', bold);
+
 //font stack variables
-$header-font-stack: 'Proxima Nova Rg', 'Helvetica Neue', Arial, sans-serif;
-$paragraph-font-stack: 'Proxima Nova Rg', 'Helvetica Neue', Arial, sans-serif;
+$header-font-stack: 'ProximaNovaRg', 'Helvetica Neue', Arial, sans-serif;
+$paragraph-font-stack: 'ProximaNovaRg', 'Helvetica Neue', Arial, sans-serif;
 
 //modular type calculations
 $type-ratio: 1.25; // major third
@@ -48,13 +51,13 @@ $type-margin-bottom: $type-base * $pwr-2;
 @mixin link-static{ //start position for underline
 border-bottom: 2px solid rgba(255, 255, 255, 0);
 padding: 0 0 5px;
-transition: .25s;
+@include transition (all 0.2s ease-in-out)
 }
 
 @mixin link-hover($move-time: .5s, $end-stop: 10px){
 border-bottom: 2px solid rgba(255, 255, 255, 1);
 padding: 0 0 $end-stop;
-transition: $move-time;
+@include transition (all $move-time ease-in-out)
 }
 
 //global type styles
@@ -65,18 +68,29 @@ h1{
   text-align: center;
 }
 
+h2{
+  @include type(2);
+  font-family: $header-font-stack;
+  text-align: right;
+}
+
 p{
   @include type(7);
   font-family: $paragraph-font-stack;
 }
 
+figcaption{
+  @include type(7);
+  font-family: $paragraph-font-stack;
+}
 
 a{
+  font-family: $paragraph-font-stack;
   text-decoration: none;
   color: #fff;
   @include link-static;
     &:hover{
     color: #fff;
-    @include link-hover (.75s, 12px);
+    @include link-hover (.2s, 8px);
     }
 }

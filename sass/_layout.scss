@@ -1,5 +1,7 @@
+//Breakpoints
+
 $large-screen: new-breakpoint(min-width 900px 12);
-$medium-screen: new-breakpoint(min-width 700px 8);
+$medium-screen: new-breakpoint(max-width 700px 8);
 $mobile: new-breakpoint(max-width 480px 4);
 $columns: 12;
 $grid-items-background: #BBB;
@@ -23,11 +25,39 @@ $grid-items-background: #BBB;
 
 
 //Global layout styles
+
 body{
   width: 100%;
 }
 
-//Navigation layout
+figure, img {
+  max-width: 100%;
+}
+
+figure {
+    display: table;
+}
+img, figcaption {
+    display: table-cell;
+    vertical-align: bottom;
+}
+figcaption {
+    padding-left: 4px;
+}
+
+//chrome figure issue - WTF
+figure {
+display: block;
+-webkit-margin-before: 0;
+-webkit-margin-after: 0;
+-webkit-margin-start: 0;
+-webkit-margin-end: 0;
+}
+
+////////////////////////////////////////////////////////////////////
+//INTRO SECTION
+////////////////////////////////////////////////////////////////////
+
 header{
   background-color: $primary-grey;
   width: 100%;
@@ -46,7 +76,9 @@ header{
   }
 }
 
-//Deals with positioning on top intro image
+////////////////////////////////////////////////////////////////////
+//INTRO SECTION
+////////////////////////////////////////////////////////////////////
 
 .content-block-center{
   @include outer-container;
@@ -54,9 +86,9 @@ header{
 
 .page-head{
 
-  @include background-image(url("http://placehold.it/1200x1000"));
+  @include background-image(url("http://placehold.it/1000x900"));
   background-size: cover;
-  background-position: top;
+  background-position: center;
   background-repeat: no-repeat;
   padding: 12em 0 12em 0;
   position: relative;
@@ -92,16 +124,16 @@ header{
     }
 
   //color overlay shiz
-  $image-gradient-color-top: teal;
-  $transparency-top: .6;
-  $image-gradient-color-bottom: yellow;
-  $transparency-bottom: .6;
+  $image-gradient-color-top: black;
+  $transparency-top: .9;
+  $image-gradient-color-bottom: black;
+  $transparency-bottom: .9;
   $vertical-angle: 180deg;
 
-  $image-gradient-color-left: teal;
+  $image-gradient-color-left: black;
   $transparency-left: .9;
-  $image-gradient-color-right: yellow;
-  $transparency-right: .8;
+  $image-gradient-color-right: black;
+  $transparency-right: .9;
   $horizontal-angle: 90deg;
     .overlay {
       @include linear-gradient($vertical-angle, transparentize($image-gradient-color-top, $transparency-top),
@@ -119,6 +151,104 @@ header{
   }
 }
 
+////////////////////////////////////////////////////////////////////
+//SERVICES SECTION
+////////////////////////////////////////////////////////////////////
+
+.services{
+  background-color: transparentize(lightblue, .4);
+  height: 100%;
+  padding: 1em 0;
+  h1{
+    padding-top: 2.5rem;
+
+    @include media($mobile) {
+      @include type(2);
+    }
+  }
+}
+
+figure{
+  padding: 9em 0;
+  @include span-columns(3);
+
+  @include media($medium-screen) {
+    padding: 4em 0;
+    @include span-columns(4);
+    @include omega(3n);
+  }
+
+  @include media($mobile) {
+    padding: 2em 0;
+    @include fill-parent();
+  }
+}
+
+////////////////////////////////////////////////////////////////////
+//PROCESS SECTION
+////////////////////////////////////////////////////////////////////
+.process{
+  background-color: transparentize(teal, .9);
+  h1{
+    padding-top: 2.5rem;
+  }
+  p{
+    @include span-columns(8);
+    @include shift(2);
+    @include media($mobile) {
+      @include span-columns(4);
+      @include shift(0);
+    }
+    margin-top: 3em;
+    padding: 1em 2em;
+    position: relative;
+    color: white;
+    font-weight: 800;
+    background-color: transparentize(black, .8);
+    z-index: 999;
+  }
+  padding-bottom: 5em;
+}
+//common properties for subprocess sections
+%subprocess{
+  h2{
+    @include span-columns(4);
+    padding: 1em 0 1em 3em;
+  }
+  .row{
+    @include fill-parent();
+  }
+  p{
+    @include span-columns(4);
+  }
+  height: 100%;
+}
+
+.sub-process1{
+@extend %subprocess;
+background-color: transparentize(tomato, .8);
+}
+
+.sub-process2{
+@extend %subprocess;
+background-color: transparentize(orange, .8);
+}
+
+.sub-process3{
+@extend %subprocess;
+background-color: transparentize(pink, .8);
+}
+
+.sub-process4{
+@extend %subprocess;
+background-color: transparentize(red, .8);
+}
+
+
+////////////////////////////////////////////////////////////////////
+//CLIENTS SECTION
+////////////////////////////////////////////////////////////////////
+
 .clients{
   @include outer-container;
     @mixin grid-item-columns($columns) {
@@ -126,7 +256,7 @@ header{
     }
 
 .section-title{
-  margin-top: 1rem;
+  margin-top: 3rem;
 }
 
 .grid-items-lines {
@@ -154,7 +284,7 @@ header{
     border-bottom: $grid-item-border;
     cursor: pointer;
 
-    @include media($medium-screen) {
+    @include media($large-screen) {
       @include grid-item-columns($grid-item-columns);
     }
 
@@ -176,14 +306,16 @@ header{
       margin-bottom: .4em;
     }
 
-  .grid-item p {
-      color: transparentize($grid-item-color, .4);
-      @include media($medium-screen) {
-        max-width: 70%;
-      }
-    }
+  //uncomment below for client description styling
+  // .grid-item p {
+  //     color: transparentize($grid-item-color, .4);
+  //     @include media($medium-screen) {
+  //       max-width: 70%;
+  //     }
+    // }
   }
-// this, below, might not be the most beautiful solution but it removes the outer borders by using the background color.
+
+// kills outer borders
   .bottom-cover {
     position: absolute;
     bottom: 0px;

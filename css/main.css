@@ -400,6 +400,27 @@ th {
   box-sizing: border-box;
 }
 
+body:before {
+  content: '';
+  display: inline-block;
+  background-image: deprecated-webkit-gradient(linear, left top, left bottom, rgba(0, 0, 0, 0) 0, #eeeeee 0, #eeeeee 6.17215%, rgba(0, 0, 0, 0) 6.17215%, rgba(0, 0, 0, 0) 8.5298%, #eeeeee 8.5298%, #eeeeee 14.70196%, rgba(0, 0, 0, 0) 14.70196%, rgba(0, 0, 0, 0) 17.05961%, #eeeeee 17.05961%, #eeeeee 23.23176%, rgba(0, 0, 0, 0) 23.23176%, rgba(0, 0, 0, 0) 25.58941%, #eeeeee 25.58941%, #eeeeee 31.76157%, rgba(0, 0, 0, 0) 31.76157%, rgba(0, 0, 0, 0) 34.11922%, #eeeeee 34.11922%, #eeeeee 40.29137%, rgba(0, 0, 0, 0) 40.29137%, rgba(0, 0, 0, 0) 42.64902%, #eeeeee 42.64902%, #eeeeee 48.82117%, rgba(0, 0, 0, 0) 48.82117%, rgba(0, 0, 0, 0) 51.17883%, #eeeeee 51.17883%, #eeeeee 57.35098%, rgba(0, 0, 0, 0) 57.35098%, rgba(0, 0, 0, 0) 59.70863%, #eeeeee 59.70863%, #eeeeee 65.88078%, rgba(0, 0, 0, 0) 65.88078%, rgba(0, 0, 0, 0) 68.23843%, #eeeeee 68.23843%, #eeeeee 74.41059%, rgba(0, 0, 0, 0) 74.41059%, rgba(0, 0, 0, 0) 76.76824%, #eeeeee 76.76824%, #eeeeee 82.94039%, rgba(0, 0, 0, 0) 82.94039%, rgba(0, 0, 0, 0) 85.29804%, #eeeeee 85.29804%, #eeeeee 91.4702%, rgba(0, 0, 0, 0) 91.4702%, rgba(0, 0, 0, 0) 93.82785%, #eeeeee 93.82785%, #eeeeee 100.0%, rgba(0, 0, 0, 0) 100.0%);
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0, #eeeeee 0, #eeeeee 6.17215%, rgba(0, 0, 0, 0) 6.17215%, rgba(0, 0, 0, 0) 8.5298%, #eeeeee 8.5298%, #eeeeee 14.70196%, rgba(0, 0, 0, 0) 14.70196%, rgba(0, 0, 0, 0) 17.05961%, #eeeeee 17.05961%, #eeeeee 23.23176%, rgba(0, 0, 0, 0) 23.23176%, rgba(0, 0, 0, 0) 25.58941%, #eeeeee 25.58941%, #eeeeee 31.76157%, rgba(0, 0, 0, 0) 31.76157%, rgba(0, 0, 0, 0) 34.11922%, #eeeeee 34.11922%, #eeeeee 40.29137%, rgba(0, 0, 0, 0) 40.29137%, rgba(0, 0, 0, 0) 42.64902%, #eeeeee 42.64902%, #eeeeee 48.82117%, rgba(0, 0, 0, 0) 48.82117%, rgba(0, 0, 0, 0) 51.17883%, #eeeeee 51.17883%, #eeeeee 57.35098%, rgba(0, 0, 0, 0) 57.35098%, rgba(0, 0, 0, 0) 59.70863%, #eeeeee 59.70863%, #eeeeee 65.88078%, rgba(0, 0, 0, 0) 65.88078%, rgba(0, 0, 0, 0) 68.23843%, #eeeeee 68.23843%, #eeeeee 74.41059%, rgba(0, 0, 0, 0) 74.41059%, rgba(0, 0, 0, 0) 76.76824%, #eeeeee 76.76824%, #eeeeee 82.94039%, rgba(0, 0, 0, 0) 82.94039%, rgba(0, 0, 0, 0) 85.29804%, #eeeeee 85.29804%, #eeeeee 91.4702%, rgba(0, 0, 0, 0) 91.4702%, rgba(0, 0, 0, 0) 93.82785%, #eeeeee 93.82785%, #eeeeee 100.0%, rgba(0, 0, 0, 0) 100.0%);
+  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0, #eeeeee 0, #eeeeee 6.17215%, rgba(0, 0, 0, 0) 6.17215%, rgba(0, 0, 0, 0) 8.5298%, #eeeeee 8.5298%, #eeeeee 14.70196%, rgba(0, 0, 0, 0) 14.70196%, rgba(0, 0, 0, 0) 17.05961%, #eeeeee 17.05961%, #eeeeee 23.23176%, rgba(0, 0, 0, 0) 23.23176%, rgba(0, 0, 0, 0) 25.58941%, #eeeeee 25.58941%, #eeeeee 31.76157%, rgba(0, 0, 0, 0) 31.76157%, rgba(0, 0, 0, 0) 34.11922%, #eeeeee 34.11922%, #eeeeee 40.29137%, rgba(0, 0, 0, 0) 40.29137%, rgba(0, 0, 0, 0) 42.64902%, #eeeeee 42.64902%, #eeeeee 48.82117%, rgba(0, 0, 0, 0) 48.82117%, rgba(0, 0, 0, 0) 51.17883%, #eeeeee 51.17883%, #eeeeee 57.35098%, rgba(0, 0, 0, 0) 57.35098%, rgba(0, 0, 0, 0) 59.70863%, #eeeeee 59.70863%, #eeeeee 65.88078%, rgba(0, 0, 0, 0) 65.88078%, rgba(0, 0, 0, 0) 68.23843%, #eeeeee 68.23843%, #eeeeee 74.41059%, rgba(0, 0, 0, 0) 74.41059%, rgba(0, 0, 0, 0) 76.76824%, #eeeeee 76.76824%, #eeeeee 82.94039%, rgba(0, 0, 0, 0) 82.94039%, rgba(0, 0, 0, 0) 85.29804%, #eeeeee 85.29804%, #eeeeee 91.4702%, rgba(0, 0, 0, 0) 91.4702%, rgba(0, 0, 0, 0) 93.82785%, #eeeeee 93.82785%, #eeeeee 100.0%, rgba(0, 0, 0, 0) 100.0%);
+  background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0) 0, #eeeeee 0, #eeeeee 6.17215%, rgba(0, 0, 0, 0) 6.17215%, rgba(0, 0, 0, 0) 8.5298%, #eeeeee 8.5298%, #eeeeee 14.70196%, rgba(0, 0, 0, 0) 14.70196%, rgba(0, 0, 0, 0) 17.05961%, #eeeeee 17.05961%, #eeeeee 23.23176%, rgba(0, 0, 0, 0) 23.23176%, rgba(0, 0, 0, 0) 25.58941%, #eeeeee 25.58941%, #eeeeee 31.76157%, rgba(0, 0, 0, 0) 31.76157%, rgba(0, 0, 0, 0) 34.11922%, #eeeeee 34.11922%, #eeeeee 40.29137%, rgba(0, 0, 0, 0) 40.29137%, rgba(0, 0, 0, 0) 42.64902%, #eeeeee 42.64902%, #eeeeee 48.82117%, rgba(0, 0, 0, 0) 48.82117%, rgba(0, 0, 0, 0) 51.17883%, #eeeeee 51.17883%, #eeeeee 57.35098%, rgba(0, 0, 0, 0) 57.35098%, rgba(0, 0, 0, 0) 59.70863%, #eeeeee 59.70863%, #eeeeee 65.88078%, rgba(0, 0, 0, 0) 65.88078%, rgba(0, 0, 0, 0) 68.23843%, #eeeeee 68.23843%, #eeeeee 74.41059%, rgba(0, 0, 0, 0) 74.41059%, rgba(0, 0, 0, 0) 76.76824%, #eeeeee 76.76824%, #eeeeee 82.94039%, rgba(0, 0, 0, 0) 82.94039%, rgba(0, 0, 0, 0) 85.29804%, #eeeeee 85.29804%, #eeeeee 91.4702%, rgba(0, 0, 0, 0) 91.4702%, rgba(0, 0, 0, 0) 93.82785%, #eeeeee 93.82785%, #eeeeee 100.0%, rgba(0, 0, 0, 0) 100.0%);
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0, #eeeeee 0, #eeeeee 6.17215%, rgba(0, 0, 0, 0) 6.17215%, rgba(0, 0, 0, 0) 8.5298%, #eeeeee 8.5298%, #eeeeee 14.70196%, rgba(0, 0, 0, 0) 14.70196%, rgba(0, 0, 0, 0) 17.05961%, #eeeeee 17.05961%, #eeeeee 23.23176%, rgba(0, 0, 0, 0) 23.23176%, rgba(0, 0, 0, 0) 25.58941%, #eeeeee 25.58941%, #eeeeee 31.76157%, rgba(0, 0, 0, 0) 31.76157%, rgba(0, 0, 0, 0) 34.11922%, #eeeeee 34.11922%, #eeeeee 40.29137%, rgba(0, 0, 0, 0) 40.29137%, rgba(0, 0, 0, 0) 42.64902%, #eeeeee 42.64902%, #eeeeee 48.82117%, rgba(0, 0, 0, 0) 48.82117%, rgba(0, 0, 0, 0) 51.17883%, #eeeeee 51.17883%, #eeeeee 57.35098%, rgba(0, 0, 0, 0) 57.35098%, rgba(0, 0, 0, 0) 59.70863%, #eeeeee 59.70863%, #eeeeee 65.88078%, rgba(0, 0, 0, 0) 65.88078%, rgba(0, 0, 0, 0) 68.23843%, #eeeeee 68.23843%, #eeeeee 74.41059%, rgba(0, 0, 0, 0) 74.41059%, rgba(0, 0, 0, 0) 76.76824%, #eeeeee 76.76824%, #eeeeee 82.94039%, rgba(0, 0, 0, 0) 82.94039%, rgba(0, 0, 0, 0) 85.29804%, #eeeeee 85.29804%, #eeeeee 91.4702%, rgba(0, 0, 0, 0) 91.4702%, rgba(0, 0, 0, 0) 93.82785%, #eeeeee 93.82785%, #eeeeee 100.0%, rgba(0, 0, 0, 0) 100.0%);
+  background-image: linear-gradient(left, rgba(0, 0, 0, 0) 0, #eeeeee 0, #eeeeee 6.17215%, rgba(0, 0, 0, 0) 6.17215%, rgba(0, 0, 0, 0) 8.5298%, #eeeeee 8.5298%, #eeeeee 14.70196%, rgba(0, 0, 0, 0) 14.70196%, rgba(0, 0, 0, 0) 17.05961%, #eeeeee 17.05961%, #eeeeee 23.23176%, rgba(0, 0, 0, 0) 23.23176%, rgba(0, 0, 0, 0) 25.58941%, #eeeeee 25.58941%, #eeeeee 31.76157%, rgba(0, 0, 0, 0) 31.76157%, rgba(0, 0, 0, 0) 34.11922%, #eeeeee 34.11922%, #eeeeee 40.29137%, rgba(0, 0, 0, 0) 40.29137%, rgba(0, 0, 0, 0) 42.64902%, #eeeeee 42.64902%, #eeeeee 48.82117%, rgba(0, 0, 0, 0) 48.82117%, rgba(0, 0, 0, 0) 51.17883%, #eeeeee 51.17883%, #eeeeee 57.35098%, rgba(0, 0, 0, 0) 57.35098%, rgba(0, 0, 0, 0) 59.70863%, #eeeeee 59.70863%, #eeeeee 65.88078%, rgba(0, 0, 0, 0) 65.88078%, rgba(0, 0, 0, 0) 68.23843%, #eeeeee 68.23843%, #eeeeee 74.41059%, rgba(0, 0, 0, 0) 74.41059%, rgba(0, 0, 0, 0) 76.76824%, #eeeeee 76.76824%, #eeeeee 82.94039%, rgba(0, 0, 0, 0) 82.94039%, rgba(0, 0, 0, 0) 85.29804%, #eeeeee 85.29804%, #eeeeee 91.4702%, rgba(0, 0, 0, 0) 91.4702%, rgba(0, 0, 0, 0) 93.82785%, #eeeeee 93.82785%, #eeeeee 100.0%, rgba(0, 0, 0, 0) 100.0%);
+  height: 100%;
+  left: 0;
+  margin: 0 auto;
+  max-width: 68em;
+  opacity: 0.4;
+  position: fixed;
+  right: 0;
+  width: 100%;
+  pointer-events: none;
+  z-index: 9999;
+}
+
 button,
 input[type="submit"] {
   border: 1px solid #2459a6;
@@ -684,36 +705,95 @@ dl dd {
   margin: 0;
 }
 
+@font-face {
+  font-family: ProximaNovaRg;
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/ProximaNova-Reg.eot");
+  src: url("../fonts/ProximaNova-Reg.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Reg.woff") format("woff"), url("../fonts/ProximaNova-Reg.ttf") format("truetype"), url("../fonts/ProximaNova-Reg.svg#ProximaNovaRg") format("svg");
+}
+
+@font-face {
+  font-family: ProximaNovaRg;
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/ProximaNova-Bold.eot");
+  src: url("../fonts/ProximaNova-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Bold.woff") format("woff"), url("../fonts/ProximaNova-Bold.ttf") format("truetype"), url("../fonts/ProximaNova-Bold.svg#ProximaNovaRg") format("svg");
+}
+
 h1 {
   font-size: 61.03516px;
   font-size: 3.8147rem;
-  font-family: "Proxima Nova Rg", "Helvetica Neue", Arial, sans-serif;
+  font-family: "ProximaNovaRg", "Helvetica Neue", Arial, sans-serif;
   margin: 0;
   text-align: center;
+}
+
+h2 {
+  font-size: 48.82813px;
+  font-size: 3.05176rem;
+  font-family: "ProximaNovaRg", "Helvetica Neue", Arial, sans-serif;
+  text-align: right;
 }
 
 p {
   font-size: 16px;
   font-size: 1rem;
-  font-family: "Proxima Nova Rg", "Helvetica Neue", Arial, sans-serif;
+  font-family: "ProximaNovaRg", "Helvetica Neue", Arial, sans-serif;
+}
+
+figcaption {
+  font-size: 16px;
+  font-size: 1rem;
+  font-family: "ProximaNovaRg", "Helvetica Neue", Arial, sans-serif;
 }
 
 a {
+  font-family: "ProximaNovaRg", "Helvetica Neue", Arial, sans-serif;
   text-decoration: none;
   color: #fff;
   border-bottom: 2px solid rgba(255, 255, 255, 0);
   padding: 0 0 5px;
-  transition: .25s;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 a:hover {
   color: #fff;
   border-bottom: 2px solid white;
-  padding: 0 0 12px;
-  transition: 0.75s;
+  padding: 0 0 8px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 body {
   width: 100%;
+}
+
+figure, img {
+  max-width: 100%;
+}
+
+figure {
+  display: table;
+}
+
+img, figcaption {
+  display: table-cell;
+  vertical-align: bottom;
+}
+
+figcaption {
+  padding-left: 4px;
+}
+
+figure {
+  display: block;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
 }
 
 header {
@@ -753,10 +833,10 @@ header .header-logo {
 }
 
 .page-head {
-  background-image: url("http://placehold.it/1200x1000");
-  background-image: url("http://placehold.it/1200x1000");
+  background-image: url("http://placehold.it/1000x900");
+  background-image: url("http://placehold.it/1000x900");
   background-size: cover;
-  background-position: top;
+  background-position: center;
   background-repeat: no-repeat;
   padding: 12em 0 12em 0;
   position: relative;
@@ -819,10 +899,10 @@ header .header-logo {
   }
 }
 .page-head .overlay {
-  background-color: rgba(0, 128, 128, 0.4);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 128, 128, 0.4)), color-stop(100%, rgba(255, 255, 0, 0.4)));
-  background-image: -webkit-linear-gradient(-450deg, rgba(0, 128, 128, 0.4), rgba(255, 255, 0, 0.4));
-  background-image: linear-gradient(180deg,rgba(0, 128, 128, 0.4), rgba(255, 255, 0, 0.4));
+  background-color: rgba(0, 0, 0, 0.1);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.1)), color-stop(100%, rgba(0, 0, 0, 0.1)));
+  background-image: -webkit-linear-gradient(-450deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+  background-image: linear-gradient(180deg,rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
   display: block;
   position: absolute;
   top: 0px;
@@ -832,16 +912,145 @@ header .header-logo {
 }
 .page-head .overlay:after {
   content: '';
-  background-color: rgba(0, 128, 128, 0.1);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 128, 128, 0.1)), color-stop(100%, rgba(255, 255, 0, 0.2)));
-  background-image: -webkit-linear-gradient(-360deg, rgba(0, 128, 128, 0.1), rgba(255, 255, 0, 0.2));
-  background-image: linear-gradient(90deg,rgba(0, 128, 128, 0.1), rgba(255, 255, 0, 0.2));
+  background-color: rgba(0, 0, 0, 0.1);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.1)), color-stop(100%, rgba(0, 0, 0, 0.1)));
+  background-image: -webkit-linear-gradient(-360deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+  background-image: linear-gradient(90deg,rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
   display: block;
   position: absolute;
   top: 0px;
   right: 0px;
   bottom: 0px;
   left: 0px;
+}
+
+.services {
+  background-color: rgba(173, 216, 230, 0.6);
+  height: 100%;
+  padding: 1em 0;
+}
+.services h1 {
+  padding-top: 2.5rem;
+}
+@media screen and (max-width: 480px) {
+  .services h1 {
+    font-size: 48.82813px;
+    font-size: 3.05176rem;
+  }
+}
+
+figure {
+  padding: 9em 0;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+}
+figure:last-child {
+  margin-right: 0;
+}
+@media screen and (max-width: 700px) {
+  figure {
+    padding: 4em 0;
+    float: left;
+    display: block;
+    margin-right: 3.57866%;
+    width: 48.21067%;
+  }
+  figure:last-child {
+    margin-right: 0;
+  }
+  figure:nth-child(3n) {
+    margin-right: 0;
+  }
+  figure:nth-child(3n+1) {
+    clear: left;
+  }
+}
+@media screen and (max-width: 480px) {
+  figure {
+    padding: 2em 0;
+    width: 100%;
+  }
+}
+
+.process {
+  background-color: rgba(0, 128, 128, 0.1);
+  padding-bottom: 5em;
+}
+.process h1 {
+  padding-top: 2.5rem;
+}
+.process p {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
+  margin-left: 17.05961%;
+  margin-top: 3em;
+  padding: 1em 2em;
+  position: relative;
+  color: white;
+  font-weight: 800;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 999;
+}
+.process p:last-child {
+  margin-right: 0;
+}
+@media screen and (max-width: 480px) {
+  .process p {
+    float: left;
+    display: block;
+    margin-right: 7.42297%;
+    width: 100%;
+    margin-left: 0%;
+  }
+  .process p:last-child {
+    margin-right: 0;
+  }
+}
+
+.sub-process1, .sub-process2, .sub-process3, .sub-process4 {
+  height: 100%;
+}
+.sub-process1 h2, .sub-process2 h2, .sub-process3 h2, .sub-process4 h2 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  padding: 1em 0 1em 3em;
+}
+.sub-process1 h2:last-child, .sub-process2 h2:last-child, .sub-process3 h2:last-child, .sub-process4 h2:last-child {
+  margin-right: 0;
+}
+.sub-process1 .row, .sub-process2 .row, .sub-process3 .row, .sub-process4 .row {
+  width: 100%;
+}
+.sub-process1 p, .sub-process2 p, .sub-process3 p, .sub-process4 p {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+}
+.sub-process1 p:last-child, .sub-process2 p:last-child, .sub-process3 p:last-child, .sub-process4 p:last-child {
+  margin-right: 0;
+}
+
+.sub-process1 {
+  background-color: rgba(255, 99, 71, 0.2);
+}
+
+.sub-process2 {
+  background-color: rgba(255, 165, 0, 0.2);
+}
+
+.sub-process3 {
+  background-color: rgba(255, 192, 203, 0.2);
+}
+
+.sub-process4 {
+  background-color: rgba(255, 0, 0, 0.2);
 }
 
 .clients {
@@ -858,7 +1067,7 @@ header .header-logo {
   clear: both;
 }
 .clients .section-title {
-  margin-top: 1rem;
+  margin-top: 3rem;
 }
 .clients .grid-items-lines {
   margin-top: 2em;
@@ -886,7 +1095,7 @@ header .header-logo {
   border-bottom: 1px solid rgba(51, 51, 51, 0.2);
   cursor: pointer;
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 900px) {
   .clients .grid-items-lines .grid-item {
     width: 33.33333%;
   }
@@ -904,14 +1113,6 @@ header .header-logo {
   color: #333333;
   font-size: 1.3em;
   margin-bottom: .4em;
-}
-.clients .grid-items-lines .grid-item p {
-  color: rgba(51, 51, 51, 0.6);
-}
-@media screen and (min-width: 700px) {
-  .clients .grid-items-lines .grid-item p {
-    max-width: 70%;
-  }
 }
 .clients .bottom-cover {
   position: absolute;
