@@ -86,7 +86,7 @@ header{
 
 .page-head{
 
-  @include background-image(url("http://placehold.it/1000x900"));
+  @include background-image(url("http://placehold.it/1000x900&text=FPO"));
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -158,7 +158,7 @@ header{
 .services{
   background-color: transparentize(lightblue, .4);
   height: 100%;
-  padding: 1em 0;
+  padding: 2em 0;
   h1{
     padding-top: 2.5rem;
 
@@ -169,7 +169,7 @@ header{
 }
 
 figure{
-  padding: 9em 0;
+  padding: 7em 0 9em;
   @include span-columns(3);
 
   @include media($medium-screen) {
@@ -189,9 +189,7 @@ figure{
 ////////////////////////////////////////////////////////////////////
 .process{
   background-color: transparentize(teal, .9);
-  h1{
-    padding-top: 2.5rem;
-  }
+
   p{
     @include span-columns(8);
     @include shift(2);
@@ -207,19 +205,28 @@ figure{
     background-color: transparentize(black, .8);
     z-index: 999;
   }
-  padding-bottom: 5em;
+  padding: 6em 0 8em;
 }
 //common properties for subprocess sections
 %subprocess{
   h2{
     @include span-columns(4);
-    padding: 1em 0 1em 3em;
+    @include shift(1);
+    padding: 1em 0 1rem 3em;
   }
-  .row{
-    @include fill-parent();
-  }
+
   p{
     @include span-columns(4);
+    @include shift(1);
+    clear: left;
+    text-align: right;
+  }
+  img{
+    @include span-columns(4);
+    @include shift(6);
+    clear: left;
+    margin-top: -9em;
+    padding-bottom: 3em;
   }
   height: 100%;
 }

@@ -833,8 +833,8 @@ header .header-logo {
 }
 
 .page-head {
-  background-image: url("http://placehold.it/1000x900");
-  background-image: url("http://placehold.it/1000x900");
+  background-image: url("http://placehold.it/1000x900&text=FPO");
+  background-image: url("http://placehold.it/1000x900&text=FPO");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -927,7 +927,7 @@ header .header-logo {
 .services {
   background-color: rgba(173, 216, 230, 0.6);
   height: 100%;
-  padding: 1em 0;
+  padding: 2em 0;
 }
 .services h1 {
   padding-top: 2.5rem;
@@ -940,7 +940,7 @@ header .header-logo {
 }
 
 figure {
-  padding: 9em 0;
+  padding: 7em 0 9em;
   float: left;
   display: block;
   margin-right: 2.35765%;
@@ -976,10 +976,7 @@ figure:last-child {
 
 .process {
   background-color: rgba(0, 128, 128, 0.1);
-  padding-bottom: 5em;
-}
-.process h1 {
-  padding-top: 2.5rem;
+  padding: 6em 0 8em;
 }
 .process p {
   float: left;
@@ -1019,21 +1016,35 @@ figure:last-child {
   display: block;
   margin-right: 2.35765%;
   width: 31.76157%;
-  padding: 1em 0 1em 3em;
+  margin-left: 8.5298%;
+  padding: 1em 0 1rem 3em;
 }
 .sub-process1 h2:last-child, .sub-process2 h2:last-child, .sub-process3 h2:last-child, .sub-process4 h2:last-child {
   margin-right: 0;
-}
-.sub-process1 .row, .sub-process2 .row, .sub-process3 .row, .sub-process4 .row {
-  width: 100%;
 }
 .sub-process1 p, .sub-process2 p, .sub-process3 p, .sub-process4 p {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 31.76157%;
+  margin-left: 8.5298%;
+  clear: left;
+  text-align: right;
 }
 .sub-process1 p:last-child, .sub-process2 p:last-child, .sub-process3 p:last-child, .sub-process4 p:last-child {
+  margin-right: 0;
+}
+.sub-process1 img, .sub-process2 img, .sub-process3 img, .sub-process4 img {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  margin-left: 51.17883%;
+  clear: left;
+  margin-top: -9em;
+  padding-bottom: 3em;
+}
+.sub-process1 img:last-child, .sub-process2 img:last-child, .sub-process3 img:last-child, .sub-process4 img:last-child {
   margin-right: 0;
 }
 
