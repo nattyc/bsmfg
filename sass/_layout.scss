@@ -257,6 +257,7 @@ background-color: transparentize(red, .8);
 ////////////////////////////////////////////////////////////////////
 
 .clients{
+  padding: 1em 0 4em;
   @include outer-container;
     @mixin grid-item-columns($columns) {
       width: (100% / 12) * $columns;
@@ -340,6 +341,45 @@ background-color: transparentize(red, .8);
   }
 }
 
+.cta{
+  padding: 5em;
+  background-color: grey;
+  p{
+    color: white;
+    text-align: center;
+  }
+  form{
+    @include span-columns(6);
+    @include shift(3);
+  }
+  input{
+    font-size: 1.5em;
+  }
+  button{
+    @include shift(5);
+  }
+}
+
+footer{
+  padding: .75em;
+  p{
+    padding: 1.25em 1em;
+    display: inline;
+  }
+
+  .social-links{
+    display: inline;
+    margin-left: 40%;
+    a{
+      color: blue;
+      padding-left: 2em;
+      &:hover{
+        color: teal;
+        padding-left: 2em;
+      }
+    }
+  }
+}
 
 
 

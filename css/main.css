@@ -1065,6 +1065,7 @@ figure:last-child {
 }
 
 .clients {
+  padding: 1em 0 4em;
   *zoom: 1;
   max-width: 68em;
   margin-left: auto;
@@ -1138,4 +1139,49 @@ figure:last-child {
   height: 100%;
   width: 4px;
   background: white;
+}
+
+.cta {
+  padding: 5em;
+  background-color: grey;
+}
+.cta p {
+  color: white;
+  text-align: center;
+}
+.cta form {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  margin-left: 25.58941%;
+}
+.cta form:last-child {
+  margin-right: 0;
+}
+.cta input {
+  font-size: 1.5em;
+}
+.cta button {
+  margin-left: 42.64902%;
+}
+
+footer {
+  padding: .75em;
+}
+footer p {
+  padding: 1.25em 1em;
+  display: inline;
+}
+footer .social-links {
+  display: inline;
+  margin-left: 40%;
+}
+footer .social-links a {
+  color: blue;
+  padding-left: 2em;
+}
+footer .social-links a:hover {
+  color: teal;
+  padding-left: 2em;
 }
